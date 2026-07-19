@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "title": "Aniko — Dasturchi va sun'iy intellekt ishqibozi",
+    "description": "Aniko — sun'iy intellektga asoslangan mahsulotlar, ta'lim platformalari va Telegram botlarini yaratuvchi dasturchining portfoliosi."
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Men haqimda",
+    "skills": "Ko'nikmalar",
+    "experience": "Tajriba",
+    "projects": "Loyihalar",
+    "services": "Xizmatlar",
+    "certificates": "Sertifikatlar",
+    "gallery": "Galereya",
+    "blog": "Blog",
+    "testimonials": "Fikrlar",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "greeting": "Salom, men",
+    "name": "Alijon Sattorqulov",
+    "roles": ["Dasturiy ta'minot dasturchisi", "Backend dasturchi", "Sun'iy intellekt ishqibozi", "Telegram bot dasturchisi", "React dasturchi"],
+    "description": "Men sun'iy intellektga asoslangan mahsulotlar, ta'lim platformalari va avtomatlashtirish vositalarini yarataman — React interfeyslaridan Python backendlarigacha. O'zbekistonda joylashganman.",
+    "ctaProjects": "Loyihalarni ko'rish",
+    "ctaCv": "Rezyumeni yuklab olish",
+    "scroll": "Pastga aylantiring"
+  },
+  "about": {
+    "eyebrow": "Men haqimda",
+    "title": "Ishim haqida qisqacha",
+    "intro": "Men to'liq stek bo'ylab ishlaydigan dasturchiman — asosan frontendda React, backendda Python — va sun'iy intellektni ta'lim platformalaridan tortib suhbat botlarigacha real mahsulotlarga tatbiq etishga tobora ko'proq e'tibor qarataman. Hozirda magistratura bosqichida o'qiyman, shu bilan birga mustaqil va frilanser sifatida loyihalar ustida ishlayman.",
+    "timelineTitle": "Yo'l",
+    "timeline": [
+      { "year": "Asoslar", "title": "C# va OOP", "description": "Zamonaviy veb-dasturlashga o'tishdan oldin C# va ob'ektga yo'naltirilgan dasturlash asoslaridan boshladim." },
+      { "year": "Frontend va Backend", "title": "React + Python", "description": "Haqiqiy mijoz va shaxsiy loyihalar ustida ishlab, React frontend va Python backendda bilim va tajriba to'pladim." },
+      { "year": "Sun'iy intellekt mahsulotlari", "title": "AI asosidagi platformalar", "description": "So'rovlarni animatsion darslarga aylantiruvchi ta'lim platformasi va ko'p rejimli AI Telegram botlarini yarata boshladim." },
+      { "year": "Hozir", "title": "Frilanserlik va magistratura", "description": "DoWork orqali frilanser sifatida ishlayman va shu bilan birga magistratura bosqichida o'qiyman, o'zbek va ingliz tillarida ishlayman." }
+    ],
+    "stats": [
+      { "label": "Asosiy stek", "value": "React va Python" },
+      { "label": "Tillar", "value": "UZ / EN" },
+      { "label": "Faol loyihalar", "value": "3+" },
+      { "label": "Yo'nalish", "value": "AI mahsulotlar" }
+    ]
+  },
+  "skills": {
+    "eyebrow": "Ko'nikmalar",
+    "title": "Men nima bilan ishlayman",
+    "description": "Mahsulotlarni boshidan oxirigacha loyihalash, yaratish va ishga tushirish uchun ishlatadigan vositalar va texnologiyalar.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "ai": "Sun'iy intellekt",
+      "database": "Ma'lumotlar bazasi",
+      "tools": "Vositalar"
+    }
+  },
+  "experience": {
+    "eyebrow": "Tajriba",
+    "title": "Qayerda ishlaganman",
+    "description": "Frilanser va mustaqil loyihalar xronologiyasi.",
+    "items": [
+      {
+        "company": "DoWork",
+        "position": "Frilanser dasturchi",
+        "date": "Davom etmoqda",
+        "description": "DoWork frilanser platformasi orqali mijoz loyihalarini yarataman, jumladan python-telegram-bot hamda Anthropic va Groq API'laridan foydalangan holda Python'da ko'p rejimli AI Telegram bot."
+      },
+      {
+        "company": "Zyniq",
+        "position": "Asoschi va mahsulot rahbari",
+        "date": "MVP: 2026-yil iyun",
+        "description": "Foydalanuvchi so'rovlarini interaktiv animatsion darslarga aylantiruvchi AI asosidagi ta'lim platformasi g'oyasini ishlab chiqdim va React + Claude API frontend hamda FastAPI backendda to'rt kishilik jamoani boshqardim."
+      },
+      {
+        "company": "AcademiXAI",
+        "position": "Frontend dasturchi",
+        "date": "Davom etmoqda",
+        "description": "O'zbek tilidagi interfeysga ega ko'p rolli ta'lim SaaS platformasini yarataman: dizayn tokenlari, autentifikatsiya oqimlari va Vite + React'da qayta ishlatiladigan komponentlar."
+      },
+      {
+        "company": "Mustaqil ta'lim",
+        "position": "Magistratura talabasi",
+        "date": "Davom etmoqda",
+        "description": "Frilanser va shaxsiy loyihalar bilan bir qatorda magistratura bosqichida o'qimoqdaman."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Loyihalar",
+    "title": "Tanlangan ishlar",
+    "description": "Frilanser loyihalari, o'zim boshqargan startap va shaxsiy tajribalar aralashmasi.",
+    "filters": { "all": "Barchasi", "frontend": "Frontend", "backend": "Backend", "ai": "AI", "bots": "Botlar" },
+    "liveDemo": "Jonli demo",
+    "code": "Kod",
+    "items": [
+      {
+        "title": "Zyniq",
+        "description": "So'rovlarni interaktiv animatsion darslarga aylantiruvchi AI asosidagi ta'lim platformasi. Asoschi va mahsulot menejeri sifatida g'oyadan MVP'gacha to'rt kishilik jamoani boshqardim.",
+        "tags": ["React", "FastAPI", "Claude API", "PostgreSQL"],
+        "category": ["ai", "frontend", "backend"]
+      },
+      {
+        "title": "AcademiXAI",
+        "description": "O'zbek tilidagi interfeysga ega ko'p rolli (talaba, o'qituvchi, admin) ta'lim SaaS platformasi, Vite va React asosida qurilgan.",
+        "tags": ["React", "Vite", "Dizayn tizimi"],
+        "category": ["frontend", "ai"]
+      },
+      {
+        "title": "DoWork uchun AI Telegram bot",
+        "description": "Frilanser mijoz uchun yaratilgan, Anthropic va Groq API'larini mahalliy SQLite saqlash bilan birlashtiruvchi ko'p rejimli AI Telegram bot.",
+        "tags": ["Python", "python-telegram-bot", "SQLite"],
+        "category": ["bots", "backend", "ai"]
+      },
+      {
+        "title": "Jarvis desktop yordamchisi",
+        "description": "Gemini API asosida ishlaydigan, avtomatik ishga tushirish va buyruqlarni yo'naltirish funksiyalariga ega Windows uchun Python'dagi ovozli va matnli yordamchi.",
+        "tags": ["Python", "Gemini API", "Windows"],
+        "category": ["ai", "backend"]
+      },
+      {
+        "title": "Sneakers Store",
+        "description": "Animatsion savat, sahifalar marshrutlashtirish va joylashtirilgan SPA qurilmasiga ega Frontend Mentor onlayn-do'kon loyihasi.",
+        "tags": ["React", "Vite", "Tailwind CSS"],
+        "category": ["frontend"]
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Xizmatlar",
+    "title": "Qanday yordam bera olaman",
+    "description": "Faqat dizayn emas, tayyor mahsulot kerak bo'lgan jamoalar va asoschilar uchun aniq xizmatlar.",
+    "items": [
+      { "title": "Veb-sayt yaratish", "description": "React va zamonaviy vositalar yordamida tez, moslashuvchan sayt va veb-ilovalar." },
+      { "title": "Telegram botlar", "description": "AI integratsiyasi, doimiy ma'lumotlar saqlash va ko'p rejimli suhbatlarga ega maxsus Telegram botlar." },
+      { "title": "Backend va API", "description": "Veb va bot mahsulotlarini quvvatlash uchun ishonchli Python backend va API'lar." },
+      { "title": "AI integratsiyasi", "description": "Mavjud mahsulotlarga AI funksiyalarini qo'shish — chat interfeyslaridan kontent generatsiyasigacha." },
+      { "title": "Interfeys ishlab chiqish", "description": "Dizayndan tayyor React kodiga aylantirilgan toza, qulay interfeyslar." },
+      { "title": "Avtomatlashtirish", "description": "Ish jarayonidagi takrorlanuvchi qo'lda bajariladigan ishlarni yo'q qiluvchi skript va vositalar." }
+    ]
+  },
+  "certificates": {
+    "eyebrow": "Sertifikatlar",
+    "title": "Sertifikatlar va yutuqlar",
+    "description": "Kurslar, musobaqalar va muhim bosqichlar ro'yxati.",
+    "search": "Sertifikatlarni qidirish",
+    "all": "Barchasi",
+    "categories": { "programming": "Dasturlash", "english": "Ingliz tili", "competitions": "Musobaqalar", "achievements": "Yutuqlar" },
+    "modal": { "organization": "Tashkilot", "date": "Sana", "download": "Yuklab olish" },
+    "items": [
+      { "title": "C# tilida ob'ektga yo'naltirilgan dasturlash", "organization": "Mustaqil dastur", "date": "Asoslar", "category": "programming", "description": "C#'da klasslar, meros olish, interfeyslar va OOP dizayn naqshlarining asosiy qamrovi." },
+      { "title": "Ingliz tili bo'yicha yuqori daraja", "organization": "Til sertifikati", "date": "Davom etmoqda", "category": "english", "description": "Yozma va og'zaki ingliz tilida professional darajadagi bilim sertifikati." },
+      { "title": "O'quv guruhi hakatoni", "organization": "Mahalliy texnologik jamoa", "date": "Yaqinda", "category": "competitions", "description": "Keyinchalik Zyniq platformasiga aylangan original g'oya uchun taqdirlangan." },
+      { "title": "AcademiXAI bosqichi", "organization": "Mustaqil loyiha", "date": "Davom etmoqda", "category": "achievements", "description": "Frontendda muhim bosqichga erishildi: to'liq autentifikatsiya oqimi, dizayn tokenlari va mock API qatlami." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Galereya",
+    "title": "Lahzalar",
+    "description": "Tadbirlar, hakatonlar va o'quv guruhlaridan bir nechta lahzalar.",
+    "categories": { "all": "Barchasi", "events": "Tadbirlar", "hackathons": "Hakatonlar", "education": "Ta'lim" },
+    "items": [
+      { "caption": "O'quv guruhi uchrashuvi", "category": "education" },
+      { "caption": "Jamoa bilan Zyniq'ni rejalashtirish", "category": "hackathons" },
+      { "caption": "Frilanser loyihasi boshlanishi", "category": "events" },
+      { "caption": "Tungi debug sessiyasi", "category": "hackathons" },
+      { "caption": "Magistratura darslari", "category": "education" },
+      { "caption": "Jamoat uchrashuvi", "category": "events" }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "Yozganlarim",
+    "description": "AI mahsulotlarini yaratish, frilanserlik va veb-dasturlash haqida qaydlar.",
+    "search": "Maqolalarni qidirish",
+    "readMore": "Batafsil o'qish",
+    "minRead": "daqiqa o'qish",
+    "items": [
+      { "title": "O'quv guruhi g'oyasi qanday qilib MVP'ga aylandi", "excerpt": "Zyniq doskadagi kontseptsiyadan to'rt kishilik jamoa bilan ishlaydigan AI asosidagi dars generatoriga qanday aylanganligi haqida.", "category": "Mahsulot", "date": "2026", "readTime": 6 },
+      { "title": "Python'da ko'p rejimli Telegram bot yaratish", "excerpt": "python-telegram-bot handlerlarini tuzish va bir nechta AI provayderlarini toza tarzda birlashtirish haqida qaydlar.", "category": "Dasturlash", "date": "2026", "readTime": 8 },
+      { "title": "O'qish davomida frilanserlik: nima haqiqatan ishlaydi", "excerpt": "DoWork orqali magistraturani mijoz ishlari bilan muvozanatlash bo'yicha saboqlar.", "category": "Karyera", "date": "2026", "readTime": 5 }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Fikrlar",
+    "title": "Mijozlar fikri",
+    "items": [
+      { "name": "Mijoz, DoWork", "position": "Frilanser mijozi", "comment": "Telegram botni texnik topshiriqqa to'liq mos, jumladan bir nechta AI provayderlari bilan ishlashning murakkab logikasini ham sifatli bajardi va jarayon davomida aloqani aniq yuritdi." },
+      { "name": "Jamoadosh", "position": "Zyniq dasturchisi", "comment": "Katta g'oyani kichik jamoa vaqtida amalga oshira oladigan narsaga aylantirishda juda yaxshi." },
+      { "name": "O'quv guruhi hamkasbi", "position": "Hamkasb dasturchi", "comment": "Har doim guruh loyihalarimizni g'oyadan real va namoyish qilsa bo'ladigan darajaga olib chiquvchi shaxs." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Aloqa",
+    "title": "Birgalikda ishlaylik",
+    "description": "Loyiha g'oyangiz bormi? Xabar yuboring, tez orada javob beraman.",
+    "form": {
+      "name": "Ism",
+      "namePlaceholder": "Ismingiz",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "message": "Xabar",
+      "messagePlaceholder": "Loyihangiz haqida yozing...",
+      "send": "Xabar yuborish",
+      "sending": "Yuborilmoqda...",
+      "success": "Xabar yuborildi — rahmat!",
+      "error": "Nimadir xato ketdi. Qaytadan urinib ko'ring.",
+      "errors": {
+        "name": "Iltimos, ismingizni kiriting",
+        "email": "To'g'ri email manzil kiriting",
+        "message": "Xabar kamida 10 ta belgidan iborat bo'lishi kerak"
+      }
+    },
+    "info": "Aloqa ma'lumotlari",
+    "social": "Meni internetda toping"
+  },
+  "footer": {
+    "tagline": "Dasturchi va sun'iy intellekt ishqibozi, O'zbekistondan turib ishlayman.",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "backToTop": "Yuqoriga"
+  },
+  "common": {
+    "loading": "Yuklanmoqda",
+    "copyEmail": "Emailni nusxalash",
+    "emailCopied": "Email nusxalandi",
+    "toggleTheme": "Mavzuni almashtirish",
+    "language": "Til"
+  },
+  "notFound": {
+    "title": "Sahifa topilmadi",
+    "description": "Siz izlayotgan sahifa mavjud emas yoki ko'chirilgan.",
+    "cta": "Bosh sahifaga qaytish"
+  }
+}
