@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/theme-provider";
+import { TimeBasedTheme } from "@/components/time-based-theme";
 import { ScrollProgress } from "@/components/scroll-progress";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { CursorFollower } from "@/components/cursor-follower";
@@ -71,6 +72,7 @@ export default async function LocaleLayout({
       <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}>
         <NextIntlClientProvider>
           <ThemeProvider>
+            <TimeBasedTheme />
             <ScrollProgress />
             <CursorFollower />
             {children}

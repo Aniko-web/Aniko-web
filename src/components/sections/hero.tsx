@@ -75,16 +75,16 @@ export function Hero() {
     >
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-20"
+        className="pointer-events-none absolute inset-0 opacity-100"
       >
-        <div className="absolute inset-0 bg-[url('/image.png')] bg-cover bg-center opacity-20 [mask-image:radial-gradient(circle_at_center,black_55%,transparent_92%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,var(--color-accent),transparent_70%)] opacity-[0.10]" />
+        <div className="time-photo-backdrop absolute inset-0 opacity-80 brightness-105 saturate-115 [mask-image:radial-gradient(circle_at_center,black_62%,transparent_94%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,var(--color-accent),transparent_70%)] opacity-[0.45]" />
       </div>
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,var(--color-accent),transparent_70%)] opacity-[0.04]" />
       <FloatingShapes />
 
       <Container className="grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
-        <div>
+        <div className="relative z-10 sm:p-3">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -98,7 +98,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-2 text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-gradient"
+            className="mt-2 text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-gradient drop-shadow-[0_1px_1px_rgba(255,255,255,0.16)]"
           >
             {t("name")}
           </motion.h1>

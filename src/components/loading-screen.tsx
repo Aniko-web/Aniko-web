@@ -15,14 +15,45 @@ import { AnimatePresence, motion } from "framer-motion";
  * If left as-is, or if the network request fails, an elegant CSS
  * fallback mark is shown instead so the loader never breaks.
  */
-const LOTTIE_SRC = "https://lottie.host/5896cd92-d813-405f-bd79-8c2ae44fa375/6RJOVIKuGc.lottie"; // e.g. "https://lottie.host/YOUR_ANIMATION_ID.lottie"
+const LOTTIE_SRC_BY_TIME: Record<string, string> = {
+  morning: "https://lottie.host/4a1db694-de71-4f57-88d0-f55c0633fa44/WIJ2hks7Y0.json",
+  afternoon: "https://lottie.host/2eea5b84-29c5-42e8-81ef-27d5177fec2b/nOaDZNhSZc.json",
+  sunset: "https://lottie.host/dda6f09e-73a5-4901-b6e6-e9fa030bae96/egFJBpOuzQ.lottie",
+  night: "https://lottie.host/80e9cef5-63a3-4337-aa5f-b147bdde17aa/rkv0GTaD0p.lottie"
+};
 
 export function LoadingScreen() {
   const [done, setDone] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [lottieFailed, setLottieFailed] = useState(!LOTTIE_SRC);
+  const [timeOfDay, setTimeOfDay] = useState("morning");
+  const [lottieFailed, setLottieFailed] = useState(false);
 
   useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      const hour = Number(
+        new Intl.DateTimeFormat("en-GB", {
+          timeZone: "Asia/Tashkent",
+          hour: "2-digit",
+          hour12: false
+        })
+          .formatToParts(now)
+          .find((part) => part.type === "hour")?.value ?? "0"
+      );
+
+      const nextTimeOfDay =
+        hour >= 5 && hour < 11
+          ? "morning"
+          : hour < 17
+            ? "afternoon"
+            : hour < 20
+              ? "sunset"
+              : "night";
+
+      setTimeOfDay(nextTimeOfDay);
+    };
+
+    updateTime();
     document.body.style.overflow = "hidden";
     const minTimer = setTimeout(() => setDone(true), 1600);
     return () => {
@@ -35,7 +66,8 @@ export function LoadingScreen() {
   }, [done]);
 
   useEffect(() => {
-    if (!LOTTIE_SRC || !canvasRef.current) return;
+    const lottieSrc = LOTTIE_SRC_BY_TIME[timeOfDay];
+    if (!lottieSrc || !canvasRef.current) return;
     let instance: import("@lottiefiles/dotlottie-web").DotLottie | undefined;
 
     import("@lottiefiles/dotlottie-web")
@@ -45,13 +77,13 @@ export function LoadingScreen() {
           autoplay: true,
           loop: true,
           canvas: canvasRef.current,
-          src: LOTTIE_SRC
+          src: lottieSrc
         });
       })
       .catch(() => setLottieFailed(true));
 
     return () => instance?.destroy();
-  }, []);
+  }, [timeOfDay]);
 
   return (
     <AnimatePresence>
@@ -64,15 +96,15 @@ export function LoadingScreen() {
           aria-label="Loading"
           role="status"
         >
-          <div className="relative flex h-[280px] w-[280px] items-center justify-center">
+          <div className="relative flex h-[420px] w-[420px] items-center justify-center">
             {!lottieFailed && (
-              <canvas ref={canvasRef} width={280} height={280} className="h-[280px] w-[280px]" />
+              <canvas ref={canvasRef} width={420} height={420} className="h-[420px] w-[420px]" />
             )}
             {lottieFailed && (
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 2.2, repeat: Infinity, ease: "linear" }}
-                className="h-32 w-32 rounded-full border-[4px] border-[var(--color-line)] border-t-[var(--color-accent)]"
+                className="h-40 w-40 rounded-full border-[6px] border-[var(--color-line)] border-t-[var(--color-accent)] shadow-[0_0_30px_rgba(37,99,235,0.25)]"
               />
             )}
           </div>

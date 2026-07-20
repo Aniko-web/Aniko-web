@@ -3,8 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Sun, Moon } from "lucide-react";
-import { useTheme } from "next-themes";
+import { Menu, X } from "lucide-react";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { Container } from "./ui/container";
 import { cn } from "@/lib/utils";
@@ -39,10 +38,6 @@ export function Navbar() {
   const [active, setActive] = useState<string>("home");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
-  const { setTheme, resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -154,14 +149,6 @@ export function Navbar() {
               )}
             </AnimatePresence>
           </div>
-
-          <button
-            onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-            aria-label="Toggle theme"
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-[var(--color-line)] text-[var(--color-ink)] hover:border-[var(--color-accent)] transition-colors"
-          >
-            {mounted && resolvedTheme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
-          </button>
 
           <button
             onClick={() => setMobileOpen((v) => !v)}

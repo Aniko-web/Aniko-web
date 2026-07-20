@@ -6,13 +6,13 @@
   --font-sans: var(--font-inter), "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: var(--font-jetbrains), ui-monospace, monospace;
 
-  --color-bg: #FAFAFA;
+  --color-bg: #FAF8F2;
   --color-card: #FFFFFF;
   --color-ink: #111111;
-  --color-ink-soft: #666666;
+  --color-ink-soft: #5F6673;
   --color-accent: #2563EB;
-  --color-accent-2: #7C9EFF;
-  --color-line: #E5E7EB;
+  --color-accent-2: #85A9FF;
+  --color-line: rgba(17, 17, 17, 0.09);
 
   --animate-float: float 8s ease-in-out infinite;
   --animate-float-slow: float 14s ease-in-out infinite;
@@ -31,6 +31,54 @@
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
   }
+}
+
+html[data-time-of-day="morning"] {
+  --color-bg: #FFF8F4;
+  --color-card: #FFFDFB;
+  --color-ink: #241A16;
+  --color-ink-soft: #6A4E44;
+  --color-accent: #E58D73;
+  --color-accent-2: #F2C3A7;
+  --color-line: rgba(36, 26, 22, 0.12);
+  --hero-photo: url('/tempImageLwW2LR%20-%20tahrirlangan.jpg');
+  --hero-photo-position: center center;
+}
+
+html[data-time-of-day="afternoon"] {
+  --color-bg: #F4F9FF;
+  --color-card: #FFFFFF;
+  --color-ink: #13233B;
+  --color-ink-soft: #4C627A;
+  --color-accent: #5C9FFB;
+  --color-accent-2: #9FC7FF;
+  --color-line: rgba(19, 35, 59, 0.12);
+  --hero-photo: url('/tempImager3bPoz%20-%20tahrirlangan.jpg');
+  --hero-photo-position: center center;
+}
+
+html[data-time-of-day="sunset"] {
+  --color-bg: #4A2330;
+  --color-card: #6B3040;
+  --color-ink: #FFF7F3;
+  --color-ink-soft: #FFD8DB;
+  --color-accent: #FF8B59;
+  --color-accent-2: #FFC48A;
+  --color-line: rgba(255, 255, 255, 0.22);
+  --hero-photo: url('/tempImageUwzXYI%20-%20tahrirlangan.jpg');
+  --hero-photo-position: center center;
+}
+
+html[data-time-of-day="night"] {
+  --color-bg: #081425;
+  --color-card: #10233D;
+  --color-ink: #F5F9FF;
+  --color-ink-soft: #D2E1FB;
+  --color-accent: #5C95FF;
+  --color-accent-2: #8DB8FF;
+  --color-line: rgba(255, 255, 255, 0.18);
+  --hero-photo: url('/tempImagebJDfQc%20-%20tahrirlangan.jpg');
+  --hero-photo-position: center center;
 }
 
 .dark {
@@ -57,6 +105,16 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+.time-photo-backdrop {
+  background-image: var(--hero-photo);
+  background-size: cover;
+  background-position: var(--hero-photo-position);
+}
+
+html[data-time-of-day="night"] .time-photo-backdrop {
+  filter: blur(1.5px) brightness(0.82) saturate(0.9);
 }
 
 ::selection {
