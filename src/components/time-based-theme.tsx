@@ -17,9 +17,9 @@ export function TimeBasedTheme() {
       );
 
       const timeOfDay =
-        hour >= 5 && hour < 11
+        hour >= 5 && hour < 12
           ? "morning"
-          : hour < 17
+          : hour >= 12 && hour < 17
             ? "afternoon"
             : hour < 20
               ? "sunset"
