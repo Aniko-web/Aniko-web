@@ -140,7 +140,7 @@
       { "title": "IT live academyda Frontend kursini yakunlaganlik haqida", "organization": "Mustaqil dastur", "date": "Asoslar", "category": "programming", "description": "C#'da klasslar, meros olish, interfeyslar va OOP dizayn naqshlarining asosiy qamrovi.", "downloadUrl":"" },
       { "title": "Ingliz tili bo'yicha yuqori daraja", "organization": "Til sertifikati", "date": "Davom etmoqda", "category": "english", "description": "Yozma va og'zaki ingliz tilida professional darajadagi bilim sertifikati." },
       { "title": "National ai hackathon ishtirokchisi", "organization": "IT Park Uzbekistan", "date": "Yaqinda", "category": "competitions", "description": "'National ai hackathon: Guliston' turida qatnashgani haqida ma'lumot beruvchi sertifikat.", "downloadUrl": "/certificates/certificate-National-AI-Hackathon---Syrdarya.png"},
-      { "title": "AcademiXAI bosqichi", "organization": "Mustaqil loyiha", "date": "Davom etmoqda", "category": "achievements", "description": "Frontendda muhim bosqichga erishildi: to'liq autentifikatsiya oqimi, dizayn tokenlari va mock API qatlami." }
+      { "title": "AcademiXAI bosqichi", "organization": "Mustaqil loyiha", "date": "Davom etmoqda", "category": "achievements", "description": "Frontendda muhim bosqichga erishildi: to'liq autentifikatsiya oqimi, dizayn tokenlari va mock API qatlami." } 
     ]
   },
   "gallery": {

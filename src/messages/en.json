@@ -68,13 +68,13 @@
       {
         "company": "Zyniq",
         "position": "Founder & Product Lead",
-        "date": "MVP: June 2026",
+        "date": "Ongoing",
         "description": "Originated and led an AI-powered animated educational platform that turns prompts into interactive lessons, directing a team of four developers across a React + Claude API frontend and a FastAPI backend."
       },
       {
         "company": "AcademiXAI",
         "position": "Frontend Developer",
-        "date": "Ongoing",
+        "date": "28 June",
         "description": "Building a multi-role educational SaaS platform with a Uzbek-language interface, covering design tokens, authentication flows and reusable components with Vite + React."
       }
     ]
@@ -149,12 +149,12 @@
     "description": "A few moments from events, hackathons and study groups.",
     "categories": { "all": "All", "events": "Events", "hackathons": "Hackathons", "education": "Education" },
     "items": [
-      { "caption": "Tech study group session", "category": "education" },
+      { "caption": "Local 'Zakovat' competition 2", "category": "events", "image" : "/photo_2026-07-23 3.48.00 PM.jpeg"},
       { "caption": "Planning Academixai with the team", "category": "hackathons", "image": "/1J8A7463.JPG" },
-      { "caption": "Freelance client kickoff", "category": "events" },
-      { "caption": "Late-night debugging session", "category": "hackathons" },
+      { "caption": "Memories from Saudia", "category": "events", "image": "/photo_2026-07-23 3.43.36 PM.jpeg" },
+      { "caption": "Madina, Date palm grove", "category": "events", "image":"/photo_2026-07-23 3.45.31 PM.jpeg" },
       { "caption": "Hackathon winning moments", "category": "hackathons", "image": "/20260628_152145(0).jpg" },
-      { "caption": "Community meetup", "category": "events" }
+      { "caption": "Local 'Zakovat' competition", "category": "events", "image" : "/photo_2026-07-23 3.38.52 PM.jpeg"}
     ]
   },
   "blog": {

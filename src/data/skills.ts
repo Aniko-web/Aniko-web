@@ -20,5 +20,5 @@ export const skills: Skill[] = [
   { name: "Redis", level: 65, category: "database" },
   { name: "Git & GitHub", level: 88, category: "tools" },
   { name: "Vite", level: 85, category: "tools" },
-  { name: "Figma", level: 68, category: "tools" }
+  { name: "Figma", level: 72, category: "tools" }
 ];
