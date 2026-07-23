@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
@@ -11,6 +12,7 @@ import { cn } from "@/lib/utils";
 interface GalleryItem {
   caption: string;
   category: "events" | "hackathons" | "education";
+  image?: string;
 }
 
 const CATS: GalleryItem["category"][] = ["events", "hackathons", "education"];
@@ -73,9 +75,13 @@ export function Gallery() {
                 HEIGHTS[i % HEIGHTS.length]
               )}
             >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <ImageIcon className="text-[var(--color-accent)]/40 transition-transform duration-500 group-hover:scale-110" size={28} />
-              </div>
+              {item.image ? (
+                <Image src={item.image} alt={item.caption} fill className="object-cover" />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <ImageIcon className="text-[var(--color-accent)]/40 transition-transform duration-500 group-hover:scale-110" size={28} />
+                </div>
+              )}
               <div className="absolute inset-x-0 bottom-0 translate-y-full bg-gradient-to-t from-black/70 to-transparent p-4 text-xs text-white transition-transform duration-300 group-hover:translate-y-0">
                 {item.caption}
               </div>
@@ -109,7 +115,11 @@ export function Gallery() {
               onClick={(e) => e.stopPropagation()}
               className="relative flex h-[70vh] w-full max-w-2xl items-center justify-center rounded-2xl bg-gradient-to-br from-white/10 to-transparent"
             >
-              <ImageIcon className="text-white/40" size={64} />
+              {visible[lightbox]?.image ? (
+                <Image src={visible[lightbox].image} alt={visible[lightbox].caption} fill className="rounded-2xl object-cover" />
+              ) : (
+                <ImageIcon className="text-white/40" size={64} />
+              )}
               <p className="absolute bottom-6 text-sm text-white/80">{visible[lightbox]?.caption}</p>
               <button
                 onClick={() => setLightbox(null)}

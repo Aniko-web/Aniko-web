@@ -28,7 +28,7 @@
   "about": {
     "eyebrow": "Обо мне",
     "title": "Немного о моей работе",
-    "intro": "Я разработчик, работающий full-stack — в основном React на фронтенде и Python на бэкенде — с растущим фокусом на применение ИИ в реальных продуктах: от образовательных платформ до диалоговых ботов. Сейчас получаю степень магистра, параллельно создавая и запуская проекты самостоятельно и на фрилансе.",
+    "intro": "Я full-stack разработчик, в основном работаю с React на фронтенде и Python на бэкенде. Всё больше внимания уделяю применению искусственного интеллекта в реальных продуктах — от образовательных платформ до интеллектуальных чат-ботов. В настоящее время я учусь в 9-м классе и одновременно работаю самостоятельно и как фрилансер над различными проектами.",
     "timelineTitle": "Путь",
     "timeline": [
       { "year": "Основы", "title": "C# и ООП", "description": "Начал с C# и основ объектно-ориентированного программирования, прежде чем перейти к современной веб-разработке." },
@@ -77,12 +77,6 @@
         "position": "Frontend-разработчик",
         "date": "В процессе",
         "description": "Разрабатываю многофункциональную образовательную SaaS-платформу с интерфейсом на узбекском языке: дизайн-токены, экраны авторизации и переиспользуемые компоненты на Vite + React."
-      },
-      {
-        "company": "Самостоятельное обучение",
-        "position": "Магистрант",
-        "date": "В процессе",
-        "description": "Получаю степень магистра, совмещая учёбу с фриланс- и личными проектами."
       }
     ]
   },
@@ -104,7 +98,9 @@
         "title": "AcademiXAI",
         "description": "Многофункциональная образовательная SaaS-платформа (студент, преподаватель, администратор) с интерфейсом на узбекском языке, построена на Vite и React.",
         "tags": ["React", "Vite", "Дизайн-система"],
-        "category": ["frontend", "ai"]
+        "category": ["frontend", "ai"],
+        "url":"https://github.com/muhammadjonsaidov/academixai.git"
+
       },
       {
         "title": "AI Telegram-бот для DoWork",
@@ -116,13 +112,8 @@
         "title": "Голосовой ассистент Jarvis",
         "description": "Голосовой и текстовый ассистент на Python для Windows на базе Gemini API, с автозапуском и собственной маршрутизацией команд.",
         "tags": ["Python", "Gemini API", "Windows"],
-        "category": ["ai", "backend"]
-      },
-      {
-        "title": "Sneakers Store",
-        "description": "Проект интернет-магазина в рамках челленджа Frontend Mentor с анимированной корзиной, маршрутизацией страниц и развёрнутой SPA-сборкой.",
-        "tags": ["React", "Vite", "Tailwind CSS"],
-        "category": ["frontend"]
+        "category": ["ai", "backend"],
+        "url": "https://github.com/Aniko-web/Jarvis-Desktop-Assistant"
       }
     ]
   },
@@ -150,7 +141,7 @@
     "items": [
       { "title": "Объектно-ориентированное программирование на C#", "organization": "Самостоятельная программа", "date": "Основы", "category": "programming", "description": "Основы классов, наследования, интерфейсов и паттернов ООП на C#." },
       { "title": "Продвинутый уровень английского языка", "organization": "Языковая сертификация", "date": "В процессе", "category": "english", "description": "Сертификат профессионального уровня владения устным и письменным английским языком." },
-      { "title": "Хакатон учебной группы", "organization": "Местное техническое сообщество", "date": "Недавно", "category": "competitions", "description": "Отмечен за оригинальную концепцию, которая легла в основу платформы Zyniq." },
+      { "title": "Участник Национального AI Хакатона", "organization": "IT Park Узбекистана", "date": "Недавно", "category": "competitions", "description": "Сертификат об участии в этапе «National AI Hackathon: Gulistan».", "downloadUrl": "/certificates/certificate-National-AI-Hackathon---Syrdarya.png" },
       { "title": "Веха AcademiXAI", "organization": "Самостоятельный проект", "date": "В процессе", "category": "achievements", "description": "Достигнута важная веха на фронтенде: полный флоу авторизации, дизайн-токены и mock API." }
     ]
   },
@@ -161,7 +152,7 @@
     "categories": { "all": "Все", "events": "Мероприятия", "hackathons": "Хакатоны", "education": "Учёба" },
     "items": [
       { "caption": "Встреча учебной группы", "category": "education" },
-      { "caption": "Планирование Zyniq с командой", "category": "hackathons" },
+      { "caption": "Планирование Zyniq с командой", "category": "hackathons", "image": "/1J8A7463.JPG" },
       { "caption": "Старт фриланс-проекта", "category": "events" },
       { "caption": "Ночная отладка кода", "category": "hackathons" },
       { "caption": "Занятия в магистратуре", "category": "education" },

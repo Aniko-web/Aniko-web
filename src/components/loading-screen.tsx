@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { getTimeOfDay } from "../lib/time-of-day";
 
 /**
  * Full-screen loading sequence shown on first paint.
@@ -18,6 +19,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const LOTTIE_SRC_BY_TIME: Record<string, string> = {
   morning: "https://lottie.host/4a1db694-de71-4f57-88d0-f55c0633fa44/WIJ2hks7Y0.json",
   afternoon: "https://lottie.host/2eea5b84-29c5-42e8-81ef-27d5177fec2b/nOaDZNhSZc.json",
+  evening: "https://lottie.host/dda6f09e-73a5-4901-b6e6-e9fa030bae96/egFJBpOuzQ.lottie",
   sunset: "https://lottie.host/dda6f09e-73a5-4901-b6e6-e9fa030bae96/egFJBpOuzQ.lottie",
   night: "https://lottie.host/80e9cef5-63a3-4337-aa5f-b147bdde17aa/rkv0GTaD0p.lottie"
 };
@@ -30,27 +32,7 @@ export function LoadingScreen() {
 
   useEffect(() => {
     const updateTime = () => {
-      const now = new Date();
-      const hour = Number(
-        new Intl.DateTimeFormat("en-GB", {
-          timeZone: "Asia/Tashkent",
-          hour: "2-digit",
-          hour12: false
-        })
-          .formatToParts(now)
-          .find((part) => part.type === "hour")?.value ?? "0"
-      );
-
-      const nextTimeOfDay =
-        hour >= 5 && hour < 11
-          ? "morning"
-          : hour < 17
-            ? "afternoon"
-            : hour < 20
-              ? "sunset"
-              : "night";
-
-      setTimeOfDay(nextTimeOfDay);
+      setTimeOfDay(getTimeOfDay());
     };
 
     updateTime();

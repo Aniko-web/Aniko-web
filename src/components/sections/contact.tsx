@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type SVGProps } from "react";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -13,12 +13,22 @@ import { SectionHeading } from "../ui/section-heading";
 import { Reveal } from "../ui/reveal";
 import { MagneticButton } from "../ui/magnetic-button";
 
+function InstagramIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
+      <circle cx="12" cy="12" r="4.2" />
+      <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
 const EMAIL = "anikosanuno@gmail.com";
 const SOCIALS = [
   { icon: GithubIcon, label: "GitHub", href: "https://github.com/Aniko-web" },
   { icon: LinkedinIcon, label: "LinkedIn", href: "https://linkedin.com" },
   { icon: Send, label: "Telegram", href: "https://t.me/aniko_ss" },
-  { icon: Mail, label: "Email", href: `mailto:${EMAIL}` }
+  { icon: InstagramIcon, label: "Instagram", href: "https://www.instagram.com/a.sattorqulov?igsh=eTl4c3h6bDFxZHJ2" }
 ];
 
 const schema = z.object({

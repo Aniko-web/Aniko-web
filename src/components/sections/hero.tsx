@@ -45,8 +45,6 @@ function FloatingShapes() {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden">
       <div className="absolute -top-10 right-10 h-40 w-40 rounded-[38%] bg-gradient-to-br from-[var(--color-accent)]/20 to-transparent blur-2xl animate-float-slow" />
-      <div className="absolute top-1/3 -right-8 h-28 w-28 rounded-full border border-[var(--color-accent)]/30 animate-float" />
-      <div className="absolute bottom-16 right-1/4 h-16 w-16 rotate-12 rounded-2xl border border-[var(--color-line)] bg-[var(--color-card)]/60 backdrop-blur-sm animate-float-slow" />
       <div className="absolute top-10 left-1/2 h-2 w-2 rounded-full bg-[var(--color-accent)] animate-float" />
     </div>
   );

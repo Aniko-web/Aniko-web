@@ -41,7 +41,7 @@ html[data-time-of-day="morning"] {
   --color-accent: #E58D73;
   --color-accent-2: #F2C3A7;
   --color-line: rgba(36, 26, 22, 0.12);
-  --hero-photo: url('/tempImageLwW2LR%20-%20tahrirlangan.jpg');
+  --hero-photo: url('/HeroBackground/morning%20portf.png');
   --hero-photo-position: center center;
 }
 
@@ -53,10 +53,11 @@ html[data-time-of-day="afternoon"] {
   --color-accent: #5C9FFB;
   --color-accent-2: #9FC7FF;
   --color-line: rgba(19, 35, 59, 0.12);
-  --hero-photo: url('/tempImager3bPoz%20-%20tahrirlangan.jpg');
+  --hero-photo: url('/HeroBackground/afternoon%20portf.png');
   --hero-photo-position: center center;
 }
 
+html[data-time-of-day="evening"],
 html[data-time-of-day="sunset"] {
   --color-bg: #4A2330;
   --color-card: #6B3040;
@@ -65,7 +66,7 @@ html[data-time-of-day="sunset"] {
   --color-accent: #FF8B59;
   --color-accent-2: #FFC48A;
   --color-line: rgba(255, 255, 255, 0.22);
-  --hero-photo: url('/tempImageUwzXYI%20-%20tahrirlangan.jpg');
+  --hero-photo: url('/HeroBackground/evening%20portf.png');
   --hero-photo-position: center center;
 }
 
@@ -77,7 +78,7 @@ html[data-time-of-day="night"] {
   --color-accent: #5C95FF;
   --color-accent-2: #8DB8FF;
   --color-line: rgba(255, 255, 255, 0.18);
-  --hero-photo: url('/tempImagebJDfQc%20-%20tahrirlangan.jpg');
+  --hero-photo: url('/HeroBackground/night%20portf.png');
   --hero-photo-position: center center;
 }
 

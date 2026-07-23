@@ -14,6 +14,7 @@ interface ProjectItem {
   description: string;
   tags: string[];
   category: string[];
+  url?: string;
 }
 
 const FILTERS = ["all", "frontend", "backend", "ai", "bots"] as const;
@@ -77,12 +78,22 @@ export function Projects() {
                     ))}
                   </div>
                   <div className="mt-5 flex items-center gap-4 border-t border-[var(--color-line)] pt-4">
-                    <button className="flex items-center gap-1.5 text-sm font-medium text-[var(--color-ink)] hover:text-[var(--color-accent)] transition-colors">
+                    <a
+                      href={project.url ?? "#"}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1.5 text-sm font-medium text-[var(--color-ink)] hover:text-[var(--color-accent)] transition-colors"
+                    >
                       <ExternalLink size={14} /> {t("liveDemo")}
-                    </button>
-                    <button className="flex items-center gap-1.5 text-sm font-medium text-[var(--color-ink-soft)] hover:text-[var(--color-accent)] transition-colors">
+                    </a>
+                    <a
+                      href={project.url ?? "#"}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1.5 text-sm font-medium text-[var(--color-ink-soft)] hover:text-[var(--color-accent)] transition-colors"
+                    >
                       <GithubIcon className="h-3.5 w-3.5" /> {t("code")}
-                    </button>
+                    </a>
                   </div>
                 </div>
               </motion.div>

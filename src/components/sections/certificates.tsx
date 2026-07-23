@@ -14,6 +14,8 @@ interface CertItem {
   date: string;
   category: "programming" | "english" | "competitions" | "achievements";
   description: string;
+  image?: string;
+  downloadUrl?: string;
 }
 
 const CATS: CertItem["category"][] = ["programming", "english", "competitions", "achievements"];
@@ -88,8 +90,14 @@ export function Certificates() {
                 onClick={() => setActive(cert)}
                 className="group text-left rounded-2xl border border-[var(--color-line)] bg-[var(--color-card)] p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[var(--color-accent)]/40"
               >
-                <div className="flex h-28 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--color-accent)]/12 to-transparent">
-                  <Award className="text-[var(--color-accent)]/60 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6" size={32} />
+                <div className="rounded-2xl overflow-hidden bg-[var(--color-card)]">
+                  {cert.image ? (
+                    <img src={cert.image} alt={cert.title} className="h-28 w-full object-cover" />
+                  ) : (
+                    <div className="flex h-28 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--color-accent)]/12 to-transparent">
+                      <Award className="text-[var(--color-accent)]/60 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6" size={32} />
+                    </div>
+                  )}
                 </div>
                 <h3 className="mt-4 text-sm font-semibold text-[var(--color-ink)]">{cert.title}</h3>
                 <p className="mt-1 text-xs text-[var(--color-ink-soft)]">{cert.organization} · {cert.date}</p>
@@ -125,18 +133,28 @@ export function Certificates() {
               >
                 <X size={15} />
               </button>
-              <div className="mb-5 flex h-40 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--color-accent)]/15 to-transparent">
-                <Award className="text-[var(--color-accent)]/70" size={44} />
-              </div>
+              {active.image ? (
+                <div className="mb-5 overflow-hidden rounded-2xl border border-[var(--color-line)] bg-[var(--color-card)]">
+                  <img src={active.image} alt={active.title} className="h-52 w-full object-cover" />
+                </div>
+              ) : (
+                <div className="mb-5 flex h-40 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--color-accent)]/15 to-transparent">
+                  <Award className="text-[var(--color-accent)]/70" size={44} />
+                </div>
+              )}
               <h3 className="text-xl font-semibold text-[var(--color-ink)]">{active.title}</h3>
               <div className="mt-4 space-y-2 text-sm text-[var(--color-ink-soft)]">
                 <p className="flex items-center gap-2"><Building2 size={14} /> {t("modal.organization")}: {active.organization}</p>
                 <p className="flex items-center gap-2"><Calendar size={14} /> {t("modal.date")}: {active.date}</p>
               </div>
               <p className="mt-4 text-sm leading-relaxed text-[var(--color-ink-soft)]">{active.description}</p>
-              <button className="mt-6 flex items-center gap-2 rounded-full bg-[var(--color-ink)] px-5 py-2.5 text-sm font-medium text-[var(--color-bg)] hover:opacity-90 transition-opacity">
+              <a
+                href={active.downloadUrl ?? "#"}
+                download={active.downloadUrl ? active.title : undefined}
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-[var(--color-ink)] px-5 py-2.5 text-sm font-medium text-[var(--color-bg)] transition-opacity hover:opacity-90"
+              >
                 <Download size={14} /> {t("modal.download")}
-              </button>
+              </a>
             </motion.div>
           </motion.div>
         )}

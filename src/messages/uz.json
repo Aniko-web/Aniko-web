@@ -28,13 +28,12 @@
   "about": {
     "eyebrow": "Men haqimda",
     "title": "Ishim haqida qisqacha",
-    "intro": "Men to'liq stek bo'ylab ishlaydigan dasturchiman — asosan frontendda React, backendda Python — va sun'iy intellektni ta'lim platformalaridan tortib suhbat botlarigacha real mahsulotlarga tatbiq etishga tobora ko'proq e'tibor qarataman. Hozirda magistratura bosqichida o'qiyman, shu bilan birga mustaqil va frilanser sifatida loyihalar ustida ishlayman.",
+    "intro": "Men to'liq stek bo'ylab ishlaydigan dasturchiman — asosan frontendda React, backendda Python — va sun'iy intellektni ta'lim platformalaridan tortib suhbat botlarigacha real mahsulotlarga tatbiq etishga tobora ko'proq e'tibor qarataman. Hozirda 9-sinf sifatida maktabda o'qiyman, shu bilan birga mustaqil va frilanser sifatida loyihalar ustida ishlayman.",
     "timelineTitle": "Yo'l",
     "timeline": [
       { "year": "Asoslar", "title": "C# va OOP", "description": "Zamonaviy veb-dasturlashga o'tishdan oldin C# va ob'ektga yo'naltirilgan dasturlash asoslaridan boshladim." },
       { "year": "Frontend va Backend", "title": "React + Python", "description": "Haqiqiy mijoz va shaxsiy loyihalar ustida ishlab, React frontend va Python backendda bilim va tajriba to'pladim." },
-      { "year": "Sun'iy intellekt mahsulotlari", "title": "AI asosidagi platformalar", "description": "So'rovlarni animatsion darslarga aylantiruvchi ta'lim platformasi va ko'p rejimli AI Telegram botlarini yarata boshladim." },
-      { "year": "Hozir", "title": "Frilanserlik va magistratura", "description": "DoWork orqali frilanser sifatida ishlayman va shu bilan birga magistratura bosqichida o'qiyman, o'zbek va ingliz tillarida ishlayman." }
+      { "year": "Sun'iy intellekt mahsulotlari", "title": "AI asosidagi platformalar", "description": "So'rovlarni animatsion darslarga aylantiruvchi ta'lim platformasi va ko'p rejimli AI Telegram botlarini yarata boshladim." }
     ],
     "stats": [
       { "label": "Asosiy stek", "value": "React va Python" },
@@ -69,20 +68,14 @@
       {
         "company": "Zyniq",
         "position": "Asoschi va mahsulot rahbari",
-        "date": "MVP: 2026-yil iyun",
+        "date": "Davom etmoqda",
         "description": "Foydalanuvchi so'rovlarini interaktiv animatsion darslarga aylantiruvchi AI asosidagi ta'lim platformasi g'oyasini ishlab chiqdim va React + Claude API frontend hamda FastAPI backendda to'rt kishilik jamoani boshqardim."
       },
       {
         "company": "AcademiXAI",
         "position": "Frontend dasturchi",
-        "date": "Davom etmoqda",
+        "date": "28-iyun",
         "description": "O'zbek tilidagi interfeysga ega ko'p rolli ta'lim SaaS platformasini yarataman: dizayn tokenlari, autentifikatsiya oqimlari va Vite + React'da qayta ishlatiladigan komponentlar."
-      },
-      {
-        "company": "Mustaqil ta'lim",
-        "position": "Magistratura talabasi",
-        "date": "Davom etmoqda",
-        "description": "Frilanser va shaxsiy loyihalar bilan bir qatorda magistratura bosqichida o'qimoqdaman."
       }
     ]
   },
@@ -104,7 +97,8 @@
         "title": "AcademiXAI",
         "description": "O'zbek tilidagi interfeysga ega ko'p rolli (talaba, o'qituvchi, admin) ta'lim SaaS platformasi, Vite va React asosida qurilgan.",
         "tags": ["React", "Vite", "Dizayn tizimi"],
-        "category": ["frontend", "ai"]
+        "category": ["frontend", "ai"],
+        "url":"https://github.com/muhammadjonsaidov/academixai.git"
       },
       {
         "title": "DoWork uchun AI Telegram bot",
@@ -116,13 +110,8 @@
         "title": "Jarvis desktop yordamchisi",
         "description": "Gemini API asosida ishlaydigan, avtomatik ishga tushirish va buyruqlarni yo'naltirish funksiyalariga ega Windows uchun Python'dagi ovozli va matnli yordamchi.",
         "tags": ["Python", "Gemini API", "Windows"],
-        "category": ["ai", "backend"]
-      },
-      {
-        "title": "Sneakers Store",
-        "description": "Animatsion savat, sahifalar marshrutlashtirish va joylashtirilgan SPA qurilmasiga ega Frontend Mentor onlayn-do'kon loyihasi.",
-        "tags": ["React", "Vite", "Tailwind CSS"],
-        "category": ["frontend"]
+        "category": ["ai", "backend"],
+        "url": "https://github.com/Aniko-web/Jarvis-Desktop-Assistant"
       }
     ]
   },
@@ -148,9 +137,9 @@
     "categories": { "programming": "Dasturlash", "english": "Ingliz tili", "competitions": "Musobaqalar", "achievements": "Yutuqlar" },
     "modal": { "organization": "Tashkilot", "date": "Sana", "download": "Yuklab olish" },
     "items": [
-      { "title": "C# tilida ob'ektga yo'naltirilgan dasturlash", "organization": "Mustaqil dastur", "date": "Asoslar", "category": "programming", "description": "C#'da klasslar, meros olish, interfeyslar va OOP dizayn naqshlarining asosiy qamrovi." },
+      { "title": "IT live academyda Frontend kursini yakunlaganlik haqida", "organization": "Mustaqil dastur", "date": "Asoslar", "category": "programming", "description": "C#'da klasslar, meros olish, interfeyslar va OOP dizayn naqshlarining asosiy qamrovi.", "downloadUrl":"" },
       { "title": "Ingliz tili bo'yicha yuqori daraja", "organization": "Til sertifikati", "date": "Davom etmoqda", "category": "english", "description": "Yozma va og'zaki ingliz tilida professional darajadagi bilim sertifikati." },
-      { "title": "O'quv guruhi hakatoni", "organization": "Mahalliy texnologik jamoa", "date": "Yaqinda", "category": "competitions", "description": "Keyinchalik Zyniq platformasiga aylangan original g'oya uchun taqdirlangan." },
+      { "title": "National ai hackathon ishtirokchisi", "organization": "IT Park Uzbekistan", "date": "Yaqinda", "category": "competitions", "description": "'National ai hackathon: Guliston' turida qatnashgani haqida ma'lumot beruvchi sertifikat.", "downloadUrl": "/certificates/certificate-National-AI-Hackathon---Syrdarya.png"},
       { "title": "AcademiXAI bosqichi", "organization": "Mustaqil loyiha", "date": "Davom etmoqda", "category": "achievements", "description": "Frontendda muhim bosqichga erishildi: to'liq autentifikatsiya oqimi, dizayn tokenlari va mock API qatlami." }
     ]
   },
@@ -161,10 +150,9 @@
     "categories": { "all": "Barchasi", "events": "Tadbirlar", "hackathons": "Hakatonlar", "education": "Ta'lim" },
     "items": [
       { "caption": "O'quv guruhi uchrashuvi", "category": "education" },
-      { "caption": "Jamoa bilan Zyniq'ni rejalashtirish", "category": "hackathons" },
+      { "caption": "Jamoa bilan Academixai'ni rejalashtirish", "category": "hackathons", "image": "/1J8A7463.JPG" },
       { "caption": "Frilanser loyihasi boshlanishi", "category": "events" },
-      { "caption": "Tungi debug sessiyasi", "category": "hackathons" },
-      { "caption": "Magistratura darslari", "category": "education" },
+      { "caption": "Hackathon yutkanlik lahzalari", "category": "hackathons", "image": "/20260628_152145(0).jpg" },
       { "caption": "Jamoat uchrashuvi", "category": "events" }
     ]
   },

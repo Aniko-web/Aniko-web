@@ -28,13 +28,12 @@
   "about": {
     "eyebrow": "About",
     "title": "A little about my work",
-    "intro": "I'm a developer working across the stack — mostly React on the frontend and Python on the backend — with a growing focus on applying AI to real products, from educational platforms to conversational bots. I'm currently pursuing a master's degree while building and shipping projects, both independently and through freelance work.",
+    "intro": "I am a full-stack developer, primarily working with React for frontend development and Python for backend development. I am increasingly focused on applying artificial intelligence to real-world products, ranging from educational platforms to AI-powered chatbots. I am currently a 9th-grade student, while also working independently and as a freelance developer on various projects.",
     "timelineTitle": "Journey",
     "timeline": [
       { "year": "Foundations", "title": "C# & OOP", "description": "Started with C# and object-oriented programming fundamentals before moving into modern web development." },
       { "year": "Frontend & Backend", "title": "React + Python", "description": "Built fluency across React-based frontends and Python backends, working on real client and personal projects." },
-      { "year": "AI Products", "title": "AI-powered platforms", "description": "Began building AI-driven products — an educational platform that turns prompts into animated lessons, and multi-mode AI Telegram bots." },
-      { "year": "Now", "title": "Freelance & Master's", "description": "Freelancing through DoWork while pursuing a master's degree, working in both Uzbek and English." }
+      { "year": "AI Products", "title": "AI-powered platforms", "description": "Began building AI-driven products — an educational platform that turns prompts into animated lessons, and multi-mode AI Telegram bots." }
     ],
     "stats": [
       { "label": "Core Stack", "value": "React & Python" },
@@ -77,12 +76,6 @@
         "position": "Frontend Developer",
         "date": "Ongoing",
         "description": "Building a multi-role educational SaaS platform with a Uzbek-language interface, covering design tokens, authentication flows and reusable components with Vite + React."
-      },
-      {
-        "company": "Independent Study",
-        "position": "Master's Degree Candidate",
-        "date": "Ongoing",
-        "description": "Pursuing a master's degree alongside freelance and personal project work."
       }
     ]
   },
@@ -104,7 +97,8 @@
         "title": "AcademiXAI",
         "description": "A multi-role educational SaaS platform (student, teacher, admin) with a Uzbek-language UI, built with Vite and React.",
         "tags": ["React", "Vite", "Design Systems"],
-        "category": ["frontend", "ai"]
+        "category": ["frontend", "ai"],
+        "url":"https://github.com/muhammadjonsaidov/academixai.git"
       },
       {
         "title": "DoWork AI Telegram Bot",
@@ -116,13 +110,8 @@
         "title": "Jarvis Desktop Assistant",
         "description": "A Python-based voice and text assistant for Windows, powered by the Gemini API, with startup integration and custom command routing.",
         "tags": ["Python", "Gemini API", "Windows"],
-        "category": ["ai", "backend"]
-      },
-      {
-        "title": "Sneakers Store",
-        "description": "A Frontend Mentor e-commerce challenge with an animated cart dropdown, routed pages and a deployed SPA build.",
-        "tags": ["React", "Vite", "Tailwind CSS"],
-        "category": ["frontend"]
+        "category": ["ai", "backend"],
+        "url": "https://github.com/Aniko-web/Jarvis-Desktop-Assistant"
       }
     ]
   },
@@ -150,7 +139,7 @@
     "items": [
       { "title": "Object-Oriented Programming with C#", "organization": "Self-Study Program", "date": "Foundations", "category": "programming", "description": "Core coverage of classes, inheritance, interfaces and OOP design patterns using C#." },
       { "title": "Advanced English Proficiency", "organization": "Language Certification", "date": "Ongoing", "category": "english", "description": "Certification of professional working proficiency in written and spoken English." },
-      { "title": "Tech Study Group Hackathon", "organization": "Local Tech Community", "date": "Recent", "category": "competitions", "description": "Recognized for the original concept that became the Zyniq platform." },
+      { "title": "National AI Hackathon Participant", "organization": "IT Park Uzbekistan", "date": "Recent", "category": "competitions", "description": "Certificate of Participation in the “National AI Hackathon: Gulistan” Round", "downloadUrl": "/certificates/certificate-National-AI-Hackathon---Syrdarya.png" },
       { "title": "AcademiXAI Milestone", "organization": "Independent Project", "date": "Ongoing", "category": "achievements", "description": "Reached a major frontend milestone: full auth flow, design tokens and mock API layer." }
     ]
   },
@@ -161,10 +150,10 @@
     "categories": { "all": "All", "events": "Events", "hackathons": "Hackathons", "education": "Education" },
     "items": [
       { "caption": "Tech study group session", "category": "education" },
-      { "caption": "Planning Zyniq with the team", "category": "hackathons" },
+      { "caption": "Planning Academixai with the team", "category": "hackathons", "image": "/1J8A7463.JPG" },
       { "caption": "Freelance client kickoff", "category": "events" },
       { "caption": "Late-night debugging session", "category": "hackathons" },
-      { "caption": "Master's coursework", "category": "education" },
+      { "caption": "Hackathon winning moments", "category": "hackathons", "image": "/20260628_152145(0).jpg" },
       { "caption": "Community meetup", "category": "events" }
     ]
   },
